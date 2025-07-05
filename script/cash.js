@@ -11,19 +11,19 @@ function precargarImagen(src) {
   imagenesPrecargadas[src] = img;
 }
 
-// Cargar imagen .jpg con fade
+// Cargar imagen .webp con fade
 function cargarImagen(imgElement, basePath, tipo) {
-  const jpg = `${basePath}_${tipo}.jpg`;
+  const webp = `${basePath}_${tipo}.webp`;
 
   imgElement.classList.add("hidden"); // comienza fade out
 
   const nuevaImg = new Image();
   nuevaImg.onload = () => {
-    imgElement.src = jpg;
-    precargarImagen(jpg);
+    imgElement.src = webp;
+    precargarImagen(webp);
     setTimeout(() => imgElement.classList.remove("hidden"), 50); // fade in
   };
-  nuevaImg.src = jpg;
+  nuevaImg.src = webp;
 }
 
 function actualizarImagen() {

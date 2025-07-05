@@ -13,7 +13,7 @@ function precargarImagen(src) {
 
 // Cargar imagen .webp con fade
 function cargarImagen(imgElement, basePath, tipo) {
-  const webp = `${basePath}_${tipo}.jpg`;
+  const webp = `${basePath}_${tipo}.webp`;
 
   imgElement.classList.add("hidden"); // comienza fade out
 
